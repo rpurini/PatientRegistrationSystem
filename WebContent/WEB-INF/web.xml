@@ -1,0 +1,75 @@
+<web-app>
+
+
+	<servlet>
+		<servlet-name>prs</servlet-name>
+		<servlet-class>org.prs.servlet.ViewAptServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>prs</servlet-name>
+		<url-pattern>/dburl</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>login</servlet-name>
+		<servlet-class>org.prs.servlet.LoginServlet</servlet-class>
+		<load-on-startup>3</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>login</servlet-name>
+		<url-pattern>/logurl</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>sign</servlet-name>
+		<servlet-class>org.prs.servlet.SignUpServletMain</servlet-class>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>sign</servlet-name>
+		<url-pattern>/signup</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>cancel</servlet-name>
+		<servlet-class>org.prs.servlet.CancelAptServlet</servlet-class>
+		<load-on-startup>4</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>cancel</servlet-name>
+		<url-pattern>/curl</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>make</servlet-name>
+		<servlet-class>org.prs.servlet.MakeAptServlet</servlet-class>
+		<load-on-startup>4</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>make</servlet-name>
+		<url-pattern>/murl</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>res</servlet-name>
+		<servlet-class>org.prs.servlet.ReScheduleServlet</servlet-class>
+		<load-on-startup>3</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>res</servlet-name>
+		<url-pattern>/rurl</url-pattern>
+	</servlet-mapping>
+	
+
+	<welcome-file-list>
+		<welcome-file> login.html</welcome-file>
+	</welcome-file-list>
+
+</web-app>

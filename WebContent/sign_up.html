@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Sign Up</title>
+</head>
+
+<style>
+header {
+	color: White;
+	font-family: Georgia Italic;
+	background-color: #000080;
+	font-size: 70px;
+}
+
+body {
+	background-color: #00BFFF;
+}
+
+#head {
+	color: blue;
+	font-family: calibri;
+	background-color: white;
+}
+
+#b1 {
+	color: Blue;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+#div1 {
+	color: white;
+	font-size: 20px;
+	font-family: calibri;
+}
+
+a:link, a:visited {
+	background-color: white;
+	color: black;
+	padding: 14px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+</style>
+<body>
+	<header>Manubolu Group of Healthcare Organisations</header>
+	<h2 id="head" align="center">Create an account</h2>
+	<div align="center" id="div1">
+		<form action="signup" method="POST" />
+		<table>
+			<tr>
+				<td>First name:</td>
+				<td><input type="text" name="fname" autofocus
+					placeholder="Enter First Name" required /></td>
+			</tr>
+
+			<tr>
+				<td>Last name:</td>
+				<td><input type="text" name="lname"
+					placeholder="Enter Last Name" required /></td>
+			</tr>
+
+			<tr>
+				<td>Gender:</td>
+				<td><input type="radio" name="gender" value="male" required />Male</td>
+				<td><input type="radio" name="gender" value="female" required />Female</td>
+			</tr>
+			<tr>
+				<td>Date of Birth</td>
+				<td><input type="date" name="dob" max="2000-07-05"
+					min="1947-07-05" placeholder="Date of Birth" required /></td>
+			</tr>
+			<tr>
+				<td>Phone Number</td>
+				<td><input type="number" name="phone"
+					placeholder="Phone Number" required />
+			</tr>
+			<tr>
+				<td>Email Id</td>
+				<td><input type="email" name="email" placeholder="Email Id"
+					required /></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="password" name="pass" placeholder="password"
+					required /></td>
+			</tr>
+			<tr>
+				<td>Confirm Password</td>
+				<td><input type="password" name="confirm"
+					placeholder="Confirm Password" required /></td>
+			</tr>
+			<tr>
+				<td>Insurance Number</td>
+				<td><input type="text" name="ins"
+					placeholder="Insurance number" required /></td>
+			</tr>
+			<tr>
+				<td>Address:</td>
+				<td></td>
+			</tr>
+		</table>
+		<table>
+			<tr>
+				<td></td>
+				<td>APT#</td>
+				<td><input type="text" name="apt" placeholder="Apt no" required /></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>Street</td>
+				<td><input type="text" name="street" placeholder="Street"
+					required /></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>City</td>
+				<td><input type="text" name="city" placeholder="City" required /></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>State</td>
+				<td><input type="text" name="state" placeholder="State"
+					required /></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>Country</td>
+				<td><input type="text" name="country" placeholder="Country"
+					required /></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>Zipcode</td>
+				<td><input type="number" name="zip" placeholder="Zipcode"
+					required /></td>
+			</tr>
+
+		</table>
+		<br> <br>
+		<a href="login.html">Back</a> <input id="b1" type="submit"
+			value="Create an account" /> <input type="reset" value="Reset" />
+
+	</div>
+	
+</body>
+<footer align="center">
+  <hr/>
+  <hr/>
+		   <p>All &copy;CopyRights Reserverd by Manubolu Healthcare Org.</p>
+            manubolu.suresh598@gmail.com</a>.</p>
+</footer>
+</html>
